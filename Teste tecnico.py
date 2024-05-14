@@ -79,12 +79,12 @@ if __name__ == '__main__':
                 requestNegative = requests.post(f'{link_firebase}/FeedbackNegative/.json', data=json.dumps(dataN))
 
         elif response == 'The following are negative feedbacks:':
-            requestNegative = requests.get(f'{link_firebase}/FeedbackNegativo/.json')
+            requestNegative = requests.get(f'{link_firebase}/FeedbackNegative/.json')
             dictionary = requestNegative.json()
             print(dictionary)
 
         elif response == 'Here are the positive feedbacks:':
-            requestPositive = requests.get(f'{link_firebase}/FeedbackPositivo/.json')
+            requestPositive = requests.get(f'{link_firebase}/FeedbackPositive/.json')
             dictionary = requestPositive.json()
             print(dictionary)
 
